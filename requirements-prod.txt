@@ -1,0 +1,6 @@
+# 리눅스 배포 전용. Windows 에서는 설치하지 마세요 — gunicorn 은 fcntl 의존이라
+# import 조차 되지 않습니다 (uvicorn-worker 도 gunicorn 을 import 하므로 같이 실패).
+-r requirements.txt
+
+gunicorn>=22.0
+uvicorn-worker>=0.2      # FastAPI(ASGI) 를 gunicorn 위에서 돌리기 위한 워커

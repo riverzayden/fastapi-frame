@@ -1,0 +1,13 @@
+pydantic>=2.7
+pydantic-settings>=2.2
+matplotlib>=3.8
+
+# FastAPI 를 쓰는 경우 (main.py)
+fastapi>=0.111
+uvicorn[standard]>=0.29
+
+# Flask 를 쓰는 경우 (main_flask.py) — 둘 중 안 쓰는 쪽은 지우세요
+flask>=3.0
+
+# 테스트
+httpx>=0.27
